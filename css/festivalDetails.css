@@ -1,0 +1,211 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+.poppins-regular {
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+/* đầu */
+.container .header{
+    width: 100%;
+    height: 80px;
+    background-color: rgb(16, 20, 27);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.container .header .header-left .header-title{
+    display: none;
+}
+.container .header .header-left{
+    display: flex;
+    align-items: center;
+    gap: 50px;
+}
+.container .header .header-left .header-left-select{
+    display: flex;
+    gap: 30px;
+}
+.container .header .header-left .header-left-select a{
+    text-decoration: none;
+    color: white;
+}
+.container .header .header-rihgt{
+    display: flex;
+    gap: 20px;
+}
+.container .header .header-rihgt .header-rihgt-button{
+    display: flex;
+    gap: 20px;
+}
+.container .header .header-rihgt .header-rihgt-button :nth-of-type(1){
+    width: 126px;
+    height: 40px;
+    border: 1px solid white;
+    background-color: rgb(16, 20, 27);
+    color: white;
+    border-radius: 50px;
+}
+.container .header .header-rihgt .header-rihgt-button :nth-of-type(2){
+    width: 144px;
+    height: 40px;
+    border: none;
+    border-radius: 50px;
+    color: white;
+    background-color: rgba(254, 105, 105, 1);
+}
+.container .header .header-rihgt .header-right-crossbar{
+    display: none;
+}
+/* thân */
+.container .body{
+    background-color: rgb(16, 20, 27);
+    display: flex;
+    flex-direction: column;
+    color: white;
+    display: flex;
+    align-items: center;
+    height: fit-content;
+}
+.container .body .body-content{
+    width: 1280px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+.container .body .body-content span a {
+    color: white;
+}
+.container .body .body-img{
+    text-align: center;
+}
+.container .body .body-img img{
+    width: 1280px;
+    height: 720px;
+    margin-bottom: 15px;
+}
+.container .body .body-img img:nth-of-type(2){
+    margin-bottom: 25px;
+}
+/* đuôi */
+.footer {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    background-color: rgba(11, 13, 19, 1);
+    color: white;
+}
+.footer .footer-top{
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+
+}
+.footer .footer-top a{
+    text-decoration: none;
+    color: white;
+}
+.footer .footer-between {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+}
+.container .footer .footer-between .footer-between-social{
+    display: flex;
+    gap: 10px;
+}
+.footer .footer-between .footer-between-dowload{
+    display: flex;
+    gap: 10px;
+}
+.footer .footer-butom{
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 5px;
+}
+/* table */
+@media screen and (max-width:800px){
+    /* đầu */
+    .container .header .header-left .header-title{
+        display: block;
+        color: white;
+    }
+    .container .header .header-rihgt .header-right-crossbar{
+        display: block;
+    }
+    .container .header .header-left .header-left-select{
+        display: none;
+    }
+    .container .header .header-rihgt .header-rihgt-button{
+        display: none;
+    }
+    .container .header .header-left {
+        display: flex;
+        flex-direction: row;
+        gap: 10px;
+    }
+    /* thân */
+    .container .body .body-img img{
+        width: 763px;
+        height: 415px;
+    }
+    .container .body .body-content{
+        width: 763px;
+    }
+}
+/* media */
+@media screen and (max-width:420px){
+    /* đầu */
+    .container .header .header-left .header-title{
+        font-size: 10px;
+    }
+    .container .header .header-left {
+        display: flex;
+        flex-direction: row;
+        gap: 10px;
+    }
+    /* thân */
+    .container .body .body-img img{
+        width: 358px;
+        height: 202px;
+    }
+    .container .body .body-content{
+        width: 358px;
+    }
+    /* đuôi */
+    .container .footer .footer-top{
+        flex-wrap: wrap;
+        
+    }
+    .container .footer .footer-between{
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        align-items: center;
+
+    }
+    .container .footer .footer-between .footer-between-social{
+        display: flex;
+        gap: 20px;
+    
+    }
+    .container .footer .footer-between .footer-between-dowload a img{
+        width: 114px;
+        height: 35px;
+
+    }
+    .container .footer .footer-between .footer-between-dowload{
+        display: flex;
+        gap: 20px;
+    }
+    .container .footer .footer-butom{
+        text-align: center;
+    }
+}

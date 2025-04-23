@@ -1,0 +1,264 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+.poppins-regular {
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+/* đầu */
+.container .header{
+    width: 100%;
+    height: 80px;
+    background-color: rgb(16, 20, 27);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.container .header .header-left .header-title{
+    display: none;
+}
+.container .header .header-left{
+    display: flex;
+    align-items: center;
+    gap: 50px;
+}
+.container .header .header-left .header-left-select{
+    display: flex;
+    gap: 30px;
+}
+.container .header .header-left .header-left-select a{
+    text-decoration: none;
+    color: white;
+}
+.container .header .header-rihgt{
+    display: flex;
+    gap: 20px;
+}
+.container .header .header-rihgt .header-rihgt-button{
+    display: flex;
+    gap: 20px;
+}
+.container .header .header-rihgt .header-rihgt-button :nth-of-type(1){
+    width: 126px;
+    height: 40px;
+    border: 1px solid white;
+    background-color: rgb(16, 20, 27);
+    color: white;
+    border-radius: 50px;
+}
+.container .header .header-rihgt .header-rihgt-button :nth-of-type(2){
+    width: 144px;
+    height: 40px;
+    border: none;
+    border-radius: 50px;
+    color: white;
+    background-color: rgba(254, 105, 105, 1);
+}
+.container .header .header-rihgt .header-right-crossbar{
+    display: none;
+}
+/* thân */
+.container .body{
+    background-color: rgb(16, 20, 27);
+    display: flex;
+    flex-direction: column;
+}
+.container .body .body-title{
+    text-align: center;
+    font-size: 20px;
+    color: white;
+    margin-top: 30px;
+}
+.container .body .body-contents-news{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.container .body .body-content{
+    display: flex;
+    flex-direction: row;
+    gap: 15px;
+    margin-top: 25px;
+}
+.container .body .body-content .body-content-detailed{
+    width: 305px;
+    height: 344px;
+    color: rgb(198, 197, 197);
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    border: 0.5px solid rgb(71, 68, 68);
+    border-radius: 5px;
+}
+.container .body .body-content .body-content-detailed img{
+    width: 100%;
+    height: 210px;
+    border-radius: 5px 5px 0px 0px;
+}
+.container .body .body-content .body-content-detailed .body-content-detailed-information{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin: 5px;
+}
+.container .body .body-content .body-content-detailed .body-content-detailed-information p{
+    opacity: 0.5;
+}
+.body .body-button{
+    margin-top: 20px;
+    margin-bottom: 80px;
+    text-align: right;
+    margin-right: 150px;
+}
+.body .body-button button:nth-of-type(1){
+    width: 84px;
+    height: 36px;
+    background-color: rgb(16, 20, 27);
+    color: rgb(76, 79, 84);
+    border-radius: 10px;
+    border: 0.5px solid rgb(71, 68, 68);
+}
+.body .body-button button:nth-of-type(2){
+    width: 93px;
+    height: 36px;
+    background-color: rgb(16, 20, 27);
+    color: white;
+    border-radius: 10px;
+    border: 0.5px solid rgb(71, 68, 68);
+}
+/* đuôi */
+.footer {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    background-color: rgba(11, 13, 19, 1);
+    color: white;
+}
+.footer .footer-top{
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+
+}
+.footer .footer-top a{
+    text-decoration: none;
+    color: white;
+}
+.footer .footer-between {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+}
+.container .footer .footer-between .footer-between-social{
+    display: flex;
+    gap: 10px;
+}
+.footer .footer-between .footer-between-dowload{
+    display: flex;
+    gap: 10px;
+}
+.footer .footer-butom{
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 5px;
+}
+
+/* table */
+@media screen and (max-width:800px){
+    /* đầu */
+    .container .header .header-left .header-title{
+        display: block;
+        color: white;
+    }
+    .container .header .header-rihgt .header-right-crossbar{
+        display: block;
+    }
+    .container .header .header-left .header-left-select{
+        display: none;
+    }
+    .container .header .header-rihgt .header-rihgt-button{
+        display: none;
+    }
+    .container .header .header-left {
+        display: flex;
+        flex-direction: row;
+        gap: 10px;
+    }
+    /* thân */
+    .container .body .body-contents-news .body-content{
+        display: flex;
+        flex-direction: column;
+    }
+    .container .body .body-contents-news .body-content .body-content-detailed{
+        width: 736px;
+        height: fit-content;
+    }
+    .container .body .body-contents-news .body-content .body-content-detailed img{
+        font-size: 20%;
+    }
+    .body .body-button button:nth-of-type(1){
+        display: none;
+    }
+    .body .body-button button:nth-of-type(2){
+        display: none;
+    }
+    /* đuôi */
+    .container .footer .footer-between{
+        display: flex;
+        align-items: center;
+    }
+    .container .footer .footer-between .footer-between-social{
+        display: flex;
+        gap: 10px;
+    }
+}
+
+/* media */
+@media screen and (max-width:420px){
+    .container .header .header-left .header-title{
+        font-size: 10px;
+    }
+    .container .header .header-left {
+        display: flex;
+        flex-direction: row;
+        gap: 10px;
+    }
+    .container .body .body-contents-news .body-content .body-content-detailed{
+        width: 358px;
+        height: fit-content;
+    }
+    .container .footer .footer-top{
+        flex-wrap: wrap;
+        
+    }
+    .container .footer .footer-between{
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        align-items: center;
+
+    }
+    .container .footer .footer-between .footer-between-social{
+        display: flex;
+        gap: 20px;
+    
+    }
+    .container .footer .footer-between .footer-between-dowload a img{
+        width: 114px;
+        height: 35px;
+
+    }
+    .container .footer .footer-between .footer-between-dowload{
+        display: flex;
+        gap: 20px;
+    }
+    .container .footer .footer-butom{
+        text-align: center;
+    }
+}
